@@ -190,7 +190,7 @@ h1::after {
 }
 
 .navbar a:hover {
-  color: rgb(235, 46, 109);
+  color: rgb(255, 255, 255);
 }
 
 .navbar a:before {
