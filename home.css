@@ -967,7 +967,7 @@ div.card a {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#eaff00 0%, #eaff00 100%);
+  background: linear-gradient(#eaff00 0%, #ff0000 100%);
 }
 
 .toppricing {
@@ -981,7 +981,7 @@ div.card a {
 .wrapper {
   width: 400px;
   display: block;
-  background: #fff;
+  background: #000000;
   padding: 30px;
   justify-content: center;
   border-radius: 16px;
@@ -1003,7 +1003,7 @@ div.card a {
 .wrapper header label {
   height: 100%;
   width: 30%;
-  padding: 20px;
+  padding: 75px;
   z-index: 2;
   display: flex;
   position: relative;
@@ -1016,7 +1016,7 @@ div.card a {
 
 #tab-1:checked ~ header .tab-1,
 #tab-2:checked ~ header .tab-2 {
-  color: #fff;
+  color: #ffffff;
 }
 
 .wrapper input[type="radio"] {
@@ -1027,26 +1027,33 @@ div.card a {
   width: 40%;
 }
 
+.tab1 {
+  color: white;
+}
+.tab2 {
+  color: white;
+}
+
 header .slider {
   position: absolute;
   left: 50%;
   height: 85%;
   width: 120px;
-  background: red;
+  background: rgb(255, 0, 0);
   border-radius: inherit;
   transform: translateX(-50%);
-  background: linear-gradient(145deg, #d724ff 0%, #77a5f8 100%);
+  background: linear-gradient(145deg, #ff2424 0%, #ff2424 100%);
   transition: all 0.3s ease-in-out;
 }
 
 #tab-1:checked ~ header .slider {
   left: 0%;
-  width: 120px;
+  width: 50%;
   transform: translateX(5%);
 }
 #tab-2:checked ~ header .slider {
-  left: 50%;
-  width: 120px;
+  left: 74%;
+  width: 50%;
   transform: translateX(-50%);
 }
 
@@ -1140,7 +1147,7 @@ header .slider {
   font-size: 18px;
   border-radius: 30px;
   cursor: pointer;
-  background: linear-gradient(145deg, #d724ff 0%, #77a5f8 100%);
+  background: linear-gradient(145deg, #ff0000 0%, #ff0000 100%);
   transition: all 0.3s ease;
 }
 
