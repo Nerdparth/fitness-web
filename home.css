@@ -967,7 +967,7 @@ div.card a {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#d724ff 0%, #77a5f8 100%);
+  background: linear-gradient(#eaff00 0%, #eaff00 100%);
 }
 
 .toppricing {
@@ -1015,8 +1015,7 @@ div.card a {
 }
 
 #tab-1:checked ~ header .tab-1,
-#tab-2:checked ~ header .tab-2,
-#tab-3:checked ~ header .tab-3 {
+#tab-2:checked ~ header .tab-2 {
   color: #fff;
 }
 
@@ -1050,11 +1049,7 @@ header .slider {
   width: 120px;
   transform: translateX(-50%);
 }
-#tab-3:checked ~ header .slider {
-  left: 100%;
-  width: 120px;
-  transform: translateX(-105%);
-}
+
 
 .cards-area {
   overflow: hidden;
@@ -1068,9 +1063,6 @@ header .slider {
 }
 #tab-2:checked ~ .cards-area .price-card .row-1 {
   margin-left: -33.4%;
-}
-#tab-3:checked ~ .cards-area .price-card .row-1 {
-  margin-left: -66.8%;
 }
 
 .wrapper .cards-area .row {
@@ -1102,7 +1094,7 @@ header .slider {
 
 .row .pricing-details span::before {
   position: absolute;
-  content: "$";
+  content: "₹";
   font-size: 20px;
   left: -13px;
   top: 17px;
