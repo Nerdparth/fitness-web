@@ -8,7 +8,7 @@ h2.text-start{
 }
 
 h3{
-    border: 3px solid black;
+    border: 3px solid rgb(255, 0, 0);
     border-radius: 55%;
     background-color: rgb(40,43,40);
     color: white;

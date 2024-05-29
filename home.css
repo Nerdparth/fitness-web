@@ -15,11 +15,15 @@ html {
 	height: 100vh;
 	width: 100%;
 	position: fixed;
-	background: white url(/images/Spin-Preloader-1.gif) no-repeat center;
+	background: rgb(255, 234, 0) url(/images/Spin-Preloader-1.gif) no-repeat center;
 	z-index: 9999999;
 }
-
+#body
+{
+  background: red;
+}
 body {
+  color: red;
   font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
 }
@@ -49,7 +53,7 @@ h1 {
 h1::after {
   content: " ";
   display: block;
-  background-color: purple;
+  background-color: rgb(255, 0, 0);
   border-radius: 4px;
   width: 80%;
   height: 10px;
@@ -76,8 +80,8 @@ h1::after {
 }
 
 .header {
-  background: #282b28;
-  color: white;
+  background: #f2ff00;
+  color: rgb(255, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,8 +98,55 @@ h1::after {
     width: 100%;
     z-index: 100; */
 
+    /* Base styles */
 .logo {
-  font-size: 34px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold; /* Make text bold */
+}
+
+.brand-name, .gym-name {
+  color: rgb(255, 0, 0); /* Set the color */
+}
+
+/* Adjust font sizes for responsiveness */
+.brand-name {
+  font-size: 24px; /* Default font size for brand name */
+  font-weight: bold;
+}
+
+.gym-name {
+  font-size: 24px;
+  font-weight: bold; /* Default font size for gym name */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 20px; /* Smaller font size on tablets */
+  }
+
+  .gym-name {
+    font-size: 20px; /* Smaller font size on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 18px; /* Smaller font size on phones */
+  }
+
+  .gym-name {
+    font-size: 18px; /* Smaller font size on phones */
+  }
+}
+
+.logo {
+  font-size: 20px;
+  font-style: 0;
+  margin-top: -10px;
   font-family: "Poppins", sans-serif;
   margin-left: 1rem;
   transition: all 0.3s ease;
@@ -123,13 +174,13 @@ h1::after {
 
 .navbar li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 0, 0);
   padding: 28px;
 }
 
 .navbar li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 0, 0);
   padding: 16px;
   transition: all 0.3s ease;
   /* text-decoration: underline; */
@@ -154,7 +205,7 @@ h1::after {
 }
 
 .btn2 {
-  background-color: purple;
+  background-color: rgb(255, 0, 0);
   border: none;
   color: white;
   padding: 12px;
@@ -169,8 +220,8 @@ h1::after {
 .btn2:hover {
   transform: scale(1.1);
   cursor: pointer;
-  background-color: transparent;
-  border: 3px solid purple;
+  background-color: black;
+  border: 3px solid rgb(255, 0, 0);
 }
 .banner {
   color: white;
@@ -183,7 +234,7 @@ h1::after {
   opacity: 0; */
   /* animation: slide_in 1.5s linear forwards; */
 }
-/* @keyframes slide_in {
+@keyframes slide_in {
   0% {
     transform: translateX(0px);
     opacity: 0;
@@ -192,7 +243,7 @@ h1::after {
     transform: translateX(300px);
     opacity: 1;
   }
-} */
+}
 .subhead {
   font-size: 30px;
   font-weight: 600;
@@ -207,12 +258,12 @@ h1::after {
   text-transform: uppercase;
   background: linear-gradient(
     90deg,
-    purple,
-    #fff,
-    #ff00f3,
-    #0033ff,
-    #ff00c4,
-    purple
+    rgb(255, 0, 0),
+    #f6ff00,
+    #ffffff,
+    #ffffff,
+    #ff0000,
+    rgb(229, 255, 0)
   );
   background-size: 400%;
   letter-spacing: 2px;
@@ -236,12 +287,12 @@ h1::after {
   z-index: 1;
 }
 .butns {
-  background: purple;
-  color: #fff;
+  background: rgb(128, 0, 0);
+  color: #ffffff;
   font-size: 20px;
   padding: 10px 10px;
   width: 25%;
-  border: 2px solid purple;
+  border: 2px solid rgb(255, 225, 0);
   cursor: pointer;
   margin-top: 25px;
   border-radius: 15px;
@@ -281,14 +332,16 @@ h1::after {
   max-width: 90%;
   display: grid;
   margin: 50px auto;
-  grid-template-columns: (3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
+
 .grid .card {
   background: rgb(240, 239, 239);
   transition: 0.5s;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 
 .grid .card .img {
   height: 250px;
@@ -331,7 +384,7 @@ div.card a {
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
   ); */
-  background-image: url(./images/backg.jpg);
+  background-image: url(./images/backg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 960px;
