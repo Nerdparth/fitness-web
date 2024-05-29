@@ -15,7 +15,7 @@ html {
 	height: 100vh;
 	width: 100%;
 	position: fixed;
-	background: rgb(255, 234, 0) url(/images/Spin-Preloader-1.gif) no-repeat center;
+	background: rgb(0, 0, 0) url(/images/Spin-Preloader-1.gif) no-repeat center;
 	z-index: 9999999;
 }
 #body
@@ -80,7 +80,8 @@ h1::after {
 }
 
 .header {
-  background: #f2ff00;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(68, 68, 68));
+
   color: rgb(255, 0, 0);
   display: flex;
   justify-content: space-between;
@@ -101,6 +102,7 @@ h1::after {
     /* Base styles */
 .logo {
   display: flex;
+  margin-top: 0px;
   gap: 5px;
   align-items: center;
   text-align: center;
@@ -108,6 +110,7 @@ h1::after {
 }
 
 .brand-name, .gym-name {
+  margin-top: px;
   color: rgb(255, 0, 0); /* Set the color */
 }
 
@@ -384,7 +387,7 @@ div.card a {
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
   ); */
-  background-image: url(./images/backg.png);
+  background-image: url(./images/backg.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 960px;
@@ -447,7 +450,7 @@ div.card a {
 }
 
 .grid .card2 {
-  background: rgb(240, 239, 239);
+  background: rgb(255, 251, 251);
   transition: 0.5s;
   padding: 5px;
   border-radius: 5px;
@@ -470,7 +473,7 @@ div.card a {
   width: 280px;
   height: 360px;
   padding: 2rem 1rem;
-  background: #fff;
+  background: #ffffff;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -490,8 +493,8 @@ div.card a {
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(0, 176, 155, 0.5),
-    rgba(150, 201, 61, 1)
+    rgba(255, 255, 255, 0.5),
+    rgb(255, 255, 255)
   );
   z-index: 2;
   transition: 0.5s all;
@@ -511,7 +514,7 @@ div.card a {
 .card1 .info {
   position: relative;
   z-index: 3;
-  color: #fff;
+  color: #000000;
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s all;
@@ -532,7 +535,7 @@ div.card a {
 .card1 .info .btn {
   text-decoration: none;
   padding: 0.5rem 1rem;
-  background: #fff;
+  background: #000000;
   color: #000;
   font-size: 14px;
   font-weight: bold;
@@ -550,7 +553,8 @@ div.card a {
 
 .topscheduledclass,
 .toptrainers {
-  background-color: rgb(245, 245, 245);
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(50, 50, 50));
+
   width: 100%;
   display: flex;
   justify-content: center;
@@ -647,7 +651,7 @@ div.card a {
   background-color: hsl(221, 44%, 41%);
 }
 .signup-connect .btn-twitter {
-  background-color: hsl(206, 82%, 63%);
+  background-color: hsl(129, 100%, 50%);
 }
 .signup-connect .btn-google {
   background-color: hsl(7, 71%, 55%);
@@ -966,12 +970,13 @@ div.card a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(#eaff00 0%, #ff0000 100%);
+  height: 68vh;
+  background: linear-gradient(#000000 18%, #ff0000 100%);
 }
 
 .toppricing {
-  background-color: rgb(245, 245, 245);
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(65, 65, 65));
+
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1133,9 +1138,7 @@ header .slider {
   color: #77a5f8;
 }
 
-.features li span {
-  margin-left: 10px;
-}
+
 
 .wrapper button {
   height: 55px;
@@ -1157,18 +1160,23 @@ header .slider {
 
 /* Faq section */
 .faq_heading {
+  margin-top: -150px;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: -1;
 }
 .wrap {
   position: relative;
   width: 100%;
-  padding: 30px;
+  padding: 3
+  px;
   max-width: 1200px;
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
+  /* margin-top: -100px; */
+  margin-bottom: -50px;
 }
 
 .accordion {
@@ -1206,12 +1214,13 @@ header .slider {
 }
 
 .accordion__title.active {
-  background: rgb(128, 0, 128);
+  background: rgb(255, 0, 0);
   color: white;
 }
 
 footer {
-  background-color: purple;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(52, 52, 52));
+
   padding-top: 50px;
   height: 617px;
 }
@@ -1225,7 +1234,7 @@ footer {
   top: 2px;
   transform: translateY(-50%) rotate(-45deg);
   transform-origin: 50% 50%;
-  background-color: white;
+  background-color: rgb(255, 0, 0);
 }
 .accordion__title.active .x7 .bmid {
   opacity: 0;
@@ -1573,13 +1582,7 @@ footer {
     font-size: 35px;
   }
 }
-.socials {
-  display: flex;
-  gap: 10px;
-}
-.socials img {
-  transform: scale(0.8);
-}
+
 .carousel-inner .carousel-item .d-block {
   height: 100vh;
 }
@@ -1689,10 +1692,7 @@ footer {
 .one {
   max-width: 20%;
 }
-.one img {
-  width: 200px;
-  margin-bottom: 20px;
-}
+
 .one p {
   margin-top: 10px;
   font-size: 20px;
@@ -1726,12 +1726,12 @@ footer {
   color: #fff;
 }
 .twit {
-  color: #1da1f2;
-  border: 2px #1da1f2 solid;
+  color: #0dff00;
+  border: 2px #0dff00 solid;
   transition: all 0.3s ease;
 }
 .socials :hover .twit {
-  background-color: #1da1f2;
+  background-color: #0dff00;
   color: #fff;
 }
 .fa-instagram {
@@ -1767,16 +1767,16 @@ ul {
   position: relative;
 }
 .footer-col .timing {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: px;
+  margin-bottom: 7px;
 }
 .footer-col .timing i {
-  color: purple;
+  color: rgb(255, 0, 0);
   transition: all 0.3s ease;
 }
 .footer-col .timing i:hover {
   transform: translateY(-5px);
-  color: crimson;
+  color: rgb(255, 225, 0);
 }
 .footer-col ul li {
   line-height: 2.5;
@@ -1829,28 +1829,46 @@ ul {
   margin: 10px 35px;
 }
 
+/* Ensure the copyright section is fixed at the bottom */
+/* Ensure the copyright section spans the entire width of the viewport */
 .copyright {
-  padding-bottom: 17px;
-  padding-top: 17px;
-  background-color: purple;
-  color: #fff;
+  position: sticky;
+  bottom: 0;
+  width: 100%; /* Span the entire width of the viewport */
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(41, 41, 41));
+  color: #ff0000;
+  padding: 10px 0; /* Add padding for better spacing */
+  text-align: center; /* Center the text */
+  box-sizing: border-box; /* Ensure padding does not affect the width */
 }
+
+/* Style the paragraph text */
 .copyright p {
   font-size: 18px;
+  margin: 0; /* Remove default margin for better alignment */
 }
+
+/* Style the links */
 .copyright a {
   font-weight: 600;
+  color: #ff0000; /* Ensure the color is the same as the text color */
   transition: all 0.2s ease-out;
+  text-decoration: none; /* Remove underline from links */
 }
+
+/* Style the spans */
 .copyright span {
   padding: 5px;
   border-radius: 10px;
   transition: all 0.3s ease;
 }
+
+/* Hover effect for the spans */
 .copyright span:hover {
   background-color: #fff;
-  color: purple;
+  color: rgb(0, 0, 0);
 }
+
 
 /*responsive*/
 @media (max-width: 1130px) {
@@ -2007,7 +2025,7 @@ body {
   font-size: 13px;
   text-align: center;
   font-family: "Roboto";
-  background: #fcfcfd;
+  background: #000000;
 }
 .section1 {
   float: left;
@@ -2251,7 +2269,7 @@ body {
   background-clip: content-box;
   border: 3px solid transparent;
   border-radius: 13px;
-  background-color: purple;
+  background-color: rgb(255, 0, 0);
 }
 
 #upbtn{
